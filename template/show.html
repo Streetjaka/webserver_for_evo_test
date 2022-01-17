@@ -1,0 +1,33 @@
+{{ define "show" }}
+
+{{ template "header" }}
+    <h1 class="cover-heading">Поздоровались с:</h1>
+    <main role="main" class="inner cover">
+
+      <h1 class="cover-heading">{{ .Name }}</h1>
+      <p class="lead">{{ .Greetings }}</p>
+
+      <p class="lead">
+        <a href="/" class="btn btn-lg btn-secondary">Back</a>
+      </p>
+    </main>
+
+{{ template "footer" }}
+{{ end }}
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+
+
+
+</html>

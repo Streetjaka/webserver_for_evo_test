@@ -1,0 +1,41 @@
+{{ define "show_all" }}
+
+{{ template "header" }}
+
+    <main role="main" class="inner cover">
+      <h1 class="cover-heading">Test for EVO</h1>
+      <p class="lead">Поздоровались с:</p>
+
+      {{ range . }}
+      <div class="alert alert-danger">
+        <h2>{{ .Id }}</h2>
+        <p>{{ .Name }}</p>
+
+      {{ else }}
+      <p class="lead">Ни с кем не поздоровались</p>
+      {{ end }}
+
+      <p class="lead">
+
+      </p>
+    </main>
+
+{{ template "footer" }}
+{{ end }}
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+
+
+
+</html>

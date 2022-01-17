@@ -1,0 +1,40 @@
+{{ define "show_all1" }}
+
+{{ template "header" }}
+
+    <main role="main" class="inner cover">
+      <h1 class="cover-heading">Тут отмечены все пользователи, с которыми поздоровались</h1>
+      <p class="lead">Поздоровались с:</p>
+
+      {{ range . }}
+      <div class="alert alert-danger">
+        <h2>{{ .Id }}</h2>
+        <p>{{ .Name }}</p>
+        
+      {{ else }}
+      <p class="lead">No articles!</p>
+      {{ end }}
+
+      <p class="lead">
+
+      </p>
+    </main>
+
+{{ template "footer" }}
+{{ end }}
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+
+
+
+</html>
